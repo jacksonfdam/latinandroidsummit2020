@@ -80,10 +80,21 @@ Lint is available out of the box directly inside Android Studio.
 
 Detekt is instead a command-line tool and can be included in the build with a  [Gradle plugin](https://detekt.github.io/detekt/groovydsl.html).
 
-
-## Kotlin style guide
+### Kotlin style guide
 This document serves as the complete definition of Google’s Android coding standards for source code in the Kotlin Programming Language.
-
 https://developer.android.com/kotlin/style-guide
+
+## Code Signing
+
+
+### Where to Store Android KeyStore File in CI/CD Cycle?
+ - https://android.jlelse.eu/where-to-store-android-keystore-file-in-ci-cd-cycle-2365f4e02e57
+
+
+### Step-by-step guide to Android code signing and code signing with Codemagic
+ - https://blog.codemagic.io/the-simple-guide-to-android-code-signing/
+
+### Android code signing using Android Sign step
+ - https://devcenter.bitrise.io/code-signing/android-code-signing/android-code-signing-using-bitrise-sign-apk-step/
 
 
