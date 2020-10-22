@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "723313219399",
+    "firebase_url": "https://latin-android-summit.firebaseio.com",
+    "project_id": "latin-android-summit",
+    "storage_bucket": "latin-android-summit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723313219399:android:de7ea3343f60b2906e5e62",
+        "android_client_info": {
+          "package_name": "com.virtualconference.asianandroidsummit.app.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723313219399-p18in0tcohcib9khnaod5ci39if1anfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvbZ_9conXZu8N7S2AbnsVOiDdKdio46c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723313219399-p18in0tcohcib9khnaod5ci39if1anfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723313219399:android:71639b8f38b652786e5e62",
+        "android_client_info": {
+          "package_name": "com.virtualconference.latinandroidsummit.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723313219399-p18in0tcohcib9khnaod5ci39if1anfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvbZ_9conXZu8N7S2AbnsVOiDdKdio46c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723313219399-p18in0tcohcib9khnaod5ci39if1anfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723313219399:android:5f2b7d6b2ac71ac56e5e62",
+        "android_client_info": {
+          "package_name": "com.virtualconference.latinandroidsummit.app.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723313219399-p18in0tcohcib9khnaod5ci39if1anfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvbZ_9conXZu8N7S2AbnsVOiDdKdio46c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723313219399-p18in0tcohcib9khnaod5ci39if1anfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
