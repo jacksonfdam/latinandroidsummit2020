@@ -1,0 +1,2 @@
+rootProject.name = "Latin Android Summit"
+include ':app'
