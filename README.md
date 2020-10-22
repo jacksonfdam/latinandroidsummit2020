@@ -80,7 +80,6 @@ Lint is available out of the box directly inside Android Studio.
 
 Detekt is instead a command-line tool and can be included in the build with a  [Gradle plugin](https://detekt.github.io/detekt/groovydsl.html).
 
-
 ### Kotlin style guide
 This document serves as the complete definition of Google’s Android coding standards for source code in the Kotlin Programming Language.
 https://developer.android.com/kotlin/style-guide
