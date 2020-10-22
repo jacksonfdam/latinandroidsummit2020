@@ -97,4 +97,79 @@ https://developer.android.com/kotlin/style-guide
 ### Android code signing using Android Sign step
  - https://devcenter.bitrise.io/code-signing/android-code-signing/android-code-signing-using-bitrise-sign-apk-step/
 
+ There are also some of the best our there such as
+   - GitHub Actions
+   - CircleCI
+   - TravisCI
+   - Bitbucket Pipelines
+   - Azure Pipelines
+
+## Scaling Android Deployment with Bitbucket Pipelines and Fastlane
+ - https://bitbucket.org/blog/scaling-android-deployment-with-bitbucket-pipelines-and-fastlane
+
+## Automate publishing your Android application with Bitbucket Pipelines and Gradle
+ - https://bitbucket.org/blog/automate-publishing-your-android-application-with-bitbucket-pipelines-and-gradle
+
+```yml
+# bitbucket-pipelines.yml
+pipelines:
+  branches:
+    master:
+      - parallel:
+        - step:
+            name: Build
+            image: bitbucketpipelines/android-ci-image
+            caches:
+              - gradle
+            script:
+              - echo "$SIGNING_JKS_FILE" | base64 -d > android-signing-keystore.jks
+              - ./gradlew assembleRelease
+            artifacts:
+              - app/build/outputs/**
+  
+        - step:
+            name: Build Debug
+            caches:
+              - gradle
+            image: bitbucketpipelines/android-ci-image
+            script:
+              - echo "$SIGNING_JKS_FILE" | base64 -d > android-signing-keystore.jks
+              - ./gradlew assembleDebug
+            artifacts:
+            - app/build/outputs/**
+```
+
+## Build Android Apps with GitLab CI/CD
+ - https://medium.com/@seanghay/build-android-apps-with-gitlab-ci-cd-5fec4c301a2f
+
+## gitlab ci/cd - Android (Part-1)
+ - https://medium.com/faun/android-setup-for-gitlab-ci-cd-part-1-32bedaba0d5a
+
+
+```shell
+#.gitlab-ci.yml 
+
+image: seanghay/android-ci
+
+before_script:
+  - chmod +x ./gradlew
+
+stages:
+  - build
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+assembleDebug:
+  stage: build
+  script:
+    - ./gradlew assembleDebug
+    - cp app/build/outputs/apk/debug/app-debug.apk app-debug.apk
+  artifacts:
+    paths:
+      - app-debug.apk
+```
+
 
