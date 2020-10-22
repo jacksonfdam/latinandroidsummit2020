@@ -28,7 +28,6 @@ android {
         manifestPlaceholders.screenOrientation = "portrait"
         versionName "${versionMajor}.${versionMinor}.${versionRelease}.${versionPatch}"
         buildConfigField 'String', 'version_code', '"v.' + versionName + '"'
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
